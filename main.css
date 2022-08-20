@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+}
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 30% auto, 30% auto;
+  background-color: var(--cyan);
+}
+
+main {
+  max-width: 350px;
+  width: 100%;
+  height: 374px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.hero-div {
+  height: 140px;
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 15px 15px 0 0;
+}
+
+.profile-image {
+  background-image: url("./images/image-victor.jpg");
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  position: relative;
+  left: 38%;
+  top: -48px;
+}
+
+.card-main {
+  height: calc(100% - 140px);
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
