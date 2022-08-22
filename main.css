@@ -31,7 +31,6 @@ main {
   width: 100%;
   height: 374px;
   border-radius: 15px;
-  border: 1px solid black;
 }
 
 .hero-div {
@@ -41,12 +40,13 @@ main {
 }
 
 .profile-image {
+  display: inline-block;
   background-image: url("./images/image-victor.jpg");
   height: 96px;
   width: 96px;
   border-radius: 50%;
   position: relative;
-  left: 38%;
+  left: 35%;
   top: -48px;
 }
 
@@ -54,4 +54,48 @@ main {
   height: calc(100% - 140px);
   background-color: white;
   border-radius: 0 0 15px 15px;
+}
+
+.card-main h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0.5rem auto;
+  color: var(--dark-blue);
+}
+
+.card-main h1 span {
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.card-main p {
+  text-align: center;
+  color: var(--grayish-blue);
+  font-size: 0.875rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+.footer-item {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.395rem;
+  color: var(--dark-blue);
+}
+
+.footer-item__label {
+  font-weight: 400;
+  color: var(--grayish-blue);
+  font-size: 0.625rem;
+}
+
+hr {
+  background-color: var(--grayish-blue);
 }
