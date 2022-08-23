@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+}
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  /* background-position: -200px -350px, 790px 560px; */
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  /* background-size: 800px auto, 800px auto; */
+  background-size: 600px auto;
+  background-color: var(--cyan);
+}
+
+main {
+  max-width: 350px;
+  width: 100%;
+  height: 374px;
+  border-radius: 15px;
+}
+
+.hero-div {
+  height: 140px;
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 15px 15px 0 0;
+}
+
+.profile-image {
+  display: inline-block;
+  background-image: url("./images/image-victor.jpg");
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  position: relative;
+  left: 35%;
+  top: -48px;
+  border: 4px solid white;
+}
+
+.card-main {
+  height: calc(100% - 140px);
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.card-main h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0.5rem auto;
+  color: var(--dark-blue);
+  margin-top: -1.5rem;
+}
+
+.card-main h1 span {
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.card-main p {
+  text-align: center;
+  color: var(--grayish-blue);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+.footer-item {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.395rem;
+  color: var(--dark-blue);
+}
+
+.footer-item__label {
+  font-weight: 400;
+  color: var(--grayish-blue);
+  font-size: 0.625rem;
+  letter-spacing: 1.5px;
+}
+
+hr {
+  background-color: var(--grayish-blue);
+  margin: 0.5rem 0;
+}
