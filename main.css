@@ -20,11 +20,10 @@
   height: 100vh;
   background-image: url("./images/bg-pattern-top.svg"),
     url("./images/bg-pattern-bottom.svg");
-  /* background-position: -200px -350px, 790px 560px; */
-  background-position: top left, bottom right;
+  background-position: top -425px left -270px, bottom -522px right -230px;
+  /* background-position: top left, bottom right; */
   background-repeat: no-repeat;
-  /* background-size: 800px auto, 800px auto; */
-  background-size: 600px auto;
+  background-size: 976px auto;
   background-color: var(--cyan);
 }
 
